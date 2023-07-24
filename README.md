@@ -3,9 +3,6 @@
 
 ## Запуск проекта
 
-* Docker Engine 19.03.0+
-* Docker Compose 1.27.0+
-
 ```Bash
 git clone https://github.com/Korotaevam/ylab_1.git
 cd ylab_1
