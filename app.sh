@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Ожидать доступности базы данных до 20 секунд
+# Ожидать доступности базы данных до 25 секунд
 echo "Проверка доступности базы данных..."
-timeout 20s bash -c 'until echo > /dev/tcp/db/5432; do sleep 1; done'
+timeout 25s bash -c 'until echo > /dev/tcp/db/5432; do sleep 1; done'
 
 # Применить миграции Alembic
 alembic upgrade head
